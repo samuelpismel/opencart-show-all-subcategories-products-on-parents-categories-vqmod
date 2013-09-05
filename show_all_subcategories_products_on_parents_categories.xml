@@ -1,0 +1,13 @@
+<!-- Created using vQmod XML Generator by UKSB - http://uksb.github.com/vqgen/ //-->
+<modification>
+	<id><![CDATA[Show all subcategories products on parents categories]]></id>
+	<version><![CDATA[1.0.0]]></version>
+	<vqmver><![CDATA[2.3.2]]></vqmver>
+	<author><![CDATA[Samuel Gavassi Pismel]]></author>
+	<file path="catalog/controller/products/" name="category.php">
+		<operation info="Find the right line and inject the code of the feature">
+			<search position="after"><![CDATA['filter_filter'      => $filter,]]></search>
+			<add><![CDATA['filter_sub_category' => true,]]></add>
+		</operation>
+	</file>
+</modification>
